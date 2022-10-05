@@ -30,7 +30,7 @@ VStack() {
                 .font(.system(size: 20))
                 .underline()
             Button("TicTacToe") {
-                guard let url = URL(string: "paulapp://tictactoe") else {
+                guard let url = URL(string: "paulcornelissen://tictactoe") else {
                       return
                   }
                   openURL(url)
@@ -42,7 +42,7 @@ VStack() {
                 .font(.system(size: 20))
                 .underline()
             Button("Button") {
-                print("Button")
+                print("sdihfiduhs")
     }
         }
     }

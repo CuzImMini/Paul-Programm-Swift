@@ -28,29 +28,33 @@ struct MainMenu: View {
                             .foregroundColor(.secondary)
                     }
                     Spacer().frame(width: 50, height: 50)
-                    VStack() {
-                            Spacer().frame(width: 50, height: 50)
-                            VStack(alignment: .center) {
-                                Text("Spiele")
-                                    .font(Font.system(size: 20))
-                                    .underline()
-                                    .bold()
-                                Spacer().frame(width: 50, height: 20)
-                                NavigationLink(destination: TicTacToeGui()) {
-                                    Text("TicTacToe")
+                            HStack() {
+                                VStack() {
+                                    Text("Spiele")
+                                        .font(.system(size: 20))
+                                        .underline()
+                                    Spacer().frame(width: 50, height: 20)
+                                    NavigationLink(destination: TicTacToeGui()) {
+                                        Text("TicTacToe")
+                                    }
                                 }
-                                Spacer().frame(width: 50, height: 50)
-                                Text("Spiele")
-                                    .font(Font.system(size: 20))
-                                    .underline()
-                                    .bold()
-                                Spacer().frame(width: 50, height: 20)
-                                NavigationLink(destination: Text("coming soon")) {
-                                    Text("coming soon")
+                                Spacer().frame(width: 250, height: 20)
+                                VStack() {
+                                    Text("Sonstiges")
+                                        .font(.system(size: 20))
+                                        .underline()
+                                    
+                                    Spacer().frame(width: 50, height: 20)
+                                    NavigationLink(destination: Text("coming soon")) {
+                                        Text("coming soon")
+                                    }
                                 }
                             }
-
-                    }}
+                            
+                            
+                            
+                        
+                }.scaleEffect(1.3)
             }.navigationViewStyle(StackNavigationViewStyle())
 
         }

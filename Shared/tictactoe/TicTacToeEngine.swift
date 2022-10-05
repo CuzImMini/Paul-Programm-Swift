@@ -9,10 +9,10 @@ import Foundation
 
 class TicTacToeEngine: ObservableObject {
     
-    @Published var spielzuege = ["", "", "", "", "", "", "", "", ""]
+    @Published var spielzuege = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
     @Published var endGameText = "TicTacToe!"
     @Published var gameEnded = false
-    @Published var player: Int = Int.random(in: 1...2)
+    @Published var player: Int = 1
     
     let winReihen = [
         //Horizontale Reihen
@@ -24,7 +24,6 @@ class TicTacToeEngine: ObservableObject {
     ]
     
     func checkWinner() -> Bool {
-        print("Test")
         for reihe in winReihen {
             var reihenlaenge = 0
             
@@ -47,7 +46,7 @@ class TicTacToeEngine: ObservableObject {
         var belegteFelder = 0
         
         for string in spielzuege {
-            if string != "" {
+            if string != String(0) {
                 belegteFelder += 1
                 
                 if belegteFelder == 9 {
@@ -59,7 +58,7 @@ class TicTacToeEngine: ObservableObject {
     }
     
     func playerTap(index: Int) {
-        if spielzuege[index] == "" {
+        if spielzuege[index] == String(0) {
             spielzuege[index] = String(player)
         }
         if checkWinner() {
@@ -85,8 +84,8 @@ class TicTacToeEngine: ObservableObject {
     }
     
     func resetGame() {
-        endGameText = "TicTacToe!"
-        spielzuege = ["", "", "", "", "", "", "", "", ""]
+        endGameText = "Pauls TicTacToe!"
+        spielzuege = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
         gameEnded = false
         player = Int.random(in: 1...2)
         
