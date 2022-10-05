@@ -15,6 +15,7 @@ struct Paul_App_MacOSApp: App {
         }
         WindowGroup {
             TicTacToeGui()
-        }.handlesExternalEvents(matching: ["tictactoe"])
+        }
+                .handlesExternalEvents(matching: ["tictactoe"])
     }
 }

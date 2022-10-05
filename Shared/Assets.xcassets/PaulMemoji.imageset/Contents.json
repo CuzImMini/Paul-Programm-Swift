@@ -1,43 +1,43 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "PaulMemoji_x1.png",
-      "idiom" : "iphone",
-      "scale" : "1x"
+      "filename": "PaulMemoji_x1.png",
+      "idiom": "iphone",
+      "scale": "1x"
     },
     {
-      "filename" : "PaulMemoji_x2.png",
-      "idiom" : "iphone",
-      "scale" : "2x"
+      "filename": "PaulMemoji_x2.png",
+      "idiom": "iphone",
+      "scale": "2x"
     },
     {
-      "filename" : "PaulMemoji_x3.png",
-      "idiom" : "iphone",
-      "scale" : "3x"
+      "filename": "PaulMemoji_x3.png",
+      "idiom": "iphone",
+      "scale": "3x"
     },
     {
-      "filename" : "PaulMemoji_x1 1.png",
-      "idiom" : "ipad",
-      "scale" : "1x"
+      "filename": "PaulMemoji_x1 1.png",
+      "idiom": "ipad",
+      "scale": "1x"
     },
     {
-      "filename" : "PaulMemoji_x1 2.png",
-      "idiom" : "ipad",
-      "scale" : "2x"
+      "filename": "PaulMemoji_x1 2.png",
+      "idiom": "ipad",
+      "scale": "2x"
     },
     {
-      "filename" : "PaulMemoji_x1 3.png",
-      "idiom" : "mac",
-      "scale" : "1x"
+      "filename": "PaulMemoji_x1 3.png",
+      "idiom": "mac",
+      "scale": "1x"
     },
     {
-      "filename" : "PaulMemoji_x2 1.png",
-      "idiom" : "mac",
-      "scale" : "2x"
+      "filename": "PaulMemoji_x2 1.png",
+      "idiom": "mac",
+      "scale": "2x"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   }
 }

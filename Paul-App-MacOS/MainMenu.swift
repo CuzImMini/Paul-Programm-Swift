@@ -12,43 +12,43 @@ struct MainMenu: View {
     var frameWidth: CGFloat = 650
 
     var body: some View {
-        
-VStack() {
-    Image(systemName: "graduationcap.fill")
-        .resizable()
-        .frame(width: 80, height: 80)
-        .foregroundColor(.accentColor)
-    Text("Willkommen beim Paul-Programm!")
-        .font(.system(size: 24))
-        .foregroundColor(.primary)
-        .frame(width: frameWidth - 50, height: 50)
-    Divider()
-    Spacer(minLength: 40)
-    HStack() {
+
         VStack() {
-            Text("Spiele")
-                .font(.system(size: 20))
-                .underline()
-            Button("TicTacToe") {
-                guard let url = URL(string: "paulcornelissen://tictactoe") else {
-                      return
-                  }
-                  openURL(url)
-    }
+            Image(systemName: "graduationcap.fill")
+                    .resizable()
+                    .frame(width: 80, height: 80)
+                    .foregroundColor(.accentColor)
+            Text("Willkommen beim Paul-Programm!")
+                    .font(.system(size: 24))
+                    .foregroundColor(.primary)
+                    .frame(width: frameWidth - 50, height: 50)
+            Divider()
+            Spacer(minLength: 40)
+            HStack() {
+                VStack() {
+                    Text("Spiele")
+                            .font(.system(size: 20))
+                            .underline()
+                    Button("TicTacToe") {
+                        guard let url = URL(string: "paulcornelissen://tictactoe") else {
+                            return
+                        }
+                        openURL(url)
+                    }
+                }
+                Spacer(minLength: 150)
+                VStack() {
+                    Text("Sonstiges")
+                            .font(.system(size: 20))
+                            .underline()
+                    Button("Button") {
+                        print("sdihfiduhs")
+                    }
+                }
+            }
         }
-        Spacer(minLength: 150)
-        VStack() {
-            Text("Sonstiges")
-                .font(.system(size: 20))
-                .underline()
-            Button("Button") {
-                print("sdihfiduhs")
-    }
-        }
-    }
-}
-    .padding(150)
-    .frame(width: frameWidth, height: 450)
+                .padding(150)
+                .frame(width: frameWidth, height: 450)
     }
 }
 

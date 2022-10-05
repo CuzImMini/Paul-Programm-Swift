@@ -10,37 +10,37 @@ import SwiftUI
 struct RasterFeld: View {
     @State private var degrees = 0.0
     @Binding var imagePath: String
-    
-    
+
+
     var body: some View {
-        
+
         ZStack {
             Circle()
-                .frame(width: 120, height: 120)
-                .foregroundColor(.gray)
+                    .frame(width: 120, height: 120)
+                    .foregroundColor(.gray)
             Circle()
-                .frame(width: 100, height: 100)
-                .foregroundColor(.white)
+                    .frame(width: 100, height: 100)
+                    .foregroundColor(.white)
             Image(getImagePath())
-                .resizable()
-                .frame(width: 100, height: 100)
+                    .resizable()
+                    .frame(width: 100, height: 100)
         }
-        .padding(15)
-        .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
-        .simultaneousGesture(
-            TapGesture()
-                .onEnded({ _ in
-                    withAnimation(.easeIn(duration: 0.25)) {
-                        self.degrees -= 180
-                    }
-                    
-                }
-                        )
-        )
-        
+                .padding(15)
+                .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
+                .simultaneousGesture(
+                        TapGesture()
+                                .onEnded({ _ in
+                                    withAnimation(.easeIn(duration: 0.25)) {
+                                        self.degrees -= 180
+                                    }
+
+                                }
+                                )
+                )
+
     }
-    
-    
+
+
     func getImagePath() -> String {
         if imagePath == String(1) {
             return "tictactoeplayer1"
@@ -50,10 +50,9 @@ struct RasterFeld: View {
         }
         return "tictactoenull"
     }
-    
+
 }
-    
-    
+
 
 struct FeldUI_Previews: PreviewProvider {
     static var previews: some View {
