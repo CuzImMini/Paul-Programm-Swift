@@ -13,7 +13,6 @@ struct MainMenu: View {
     var body: some View {
             NavigationView() {
                 VStack {
-                    //Titel etc.
                     VStack() {
                         Image(systemName: "graduationcap.fill")
                             .resizable()
