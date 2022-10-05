@@ -6,21 +6,216 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EC17A40528EE19A400486844 /* Paul_App_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A40428EE19A400486844 /* Paul_App_iOSApp.swift */; };
+		EC17A40728EE19A400486844 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A40628EE19A400486844 /* MainMenu.swift */; };
+		EC17A40928EE19A500486844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A40828EE19A500486844 /* Assets.xcassets */; };
+		EC17A40C28EE19A500486844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A40B28EE19A500486844 /* Preview Assets.xcassets */; };
+		EC17A41828EE19E000486844 /* Paul_App_MacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */; };
+		EC17A41A28EE19E000486844 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A41928EE19E000486844 /* MainMenu.swift */; };
+		EC17A41C28EE19E000486844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A41B28EE19E000486844 /* Assets.xcassets */; };
+		EC17A41F28EE19E000486844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A41E28EE19E000486844 /* Preview Assets.xcassets */; };
+		EC17A42728EE1A3600486844 /* TicTacToeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42628EE1A3600486844 /* TicTacToeEngine.swift */; };
+		EC17A42828EE1A3600486844 /* TicTacToeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42628EE1A3600486844 /* TicTacToeEngine.swift */; };
+		EC17A42A28EE1AF200486844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A42928EE1AF200486844 /* Assets.xcassets */; };
+		EC17A42B28EE1AF200486844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A42928EE1AF200486844 /* Assets.xcassets */; };
+		EC17A42D28EE1B2300486844 /* RasterFeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42C28EE1B2300486844 /* RasterFeld.swift */; };
+		EC17A42E28EE1B2300486844 /* RasterFeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42C28EE1B2300486844 /* RasterFeld.swift */; };
+		EC17A43128EE1BF700486844 /* TicTacToeGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A43028EE1BF700486844 /* TicTacToeGui.swift */; };
+		EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A43328EE1D7900486844 /* TicTacToeGui.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC17A40128EE19A400486844 /* Paul-App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paul-App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC17A40428EE19A400486844 /* Paul_App_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paul_App_iOSApp.swift; sourceTree = "<group>"; };
+		EC17A40628EE19A400486844 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		EC17A40828EE19A500486844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC17A40B28EE19A500486844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC17A40D28EE19A500486844 /* Paul_App_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Paul_App_iOS.entitlements; sourceTree = "<group>"; };
+		EC17A41528EE19E000486844 /* Paul-App-MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paul-App-MacOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paul_App_MacOSApp.swift; sourceTree = "<group>"; };
+		EC17A41928EE19E000486844 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		EC17A41B28EE19E000486844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC17A41E28EE19E000486844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC17A42028EE19E000486844 /* Paul_App_MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Paul_App_MacOS.entitlements; sourceTree = "<group>"; };
+		EC17A42628EE1A3600486844 /* TicTacToeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeEngine.swift; sourceTree = "<group>"; };
+		EC17A42928EE1AF200486844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC17A42C28EE1B2300486844 /* RasterFeld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasterFeld.swift; sourceTree = "<group>"; };
+		EC17A43028EE1BF700486844 /* TicTacToeGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGui.swift; sourceTree = "<group>"; };
+		EC17A43328EE1D7900486844 /* TicTacToeGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGui.swift; sourceTree = "<group>"; };
+		EC17A43528EE1DFE00486844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC17A43628EE1E4600486844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC17A3FE28EE19A400486844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC17A41228EE19E000486844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		EC17A3F628EE198200486844 = {
 			isa = PBXGroup;
 			children = (
+				EC17A42428EE19E500486844 /* Shared */,
+				EC17A40328EE19A400486844 /* Paul-App-iOS */,
+				EC17A41628EE19E000486844 /* Paul-App-MacOS */,
+				EC17A40228EE19A400486844 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		EC17A40228EE19A400486844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A40128EE19A400486844 /* Paul-App-iOS.app */,
+				EC17A41528EE19E000486844 /* Paul-App-MacOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC17A40328EE19A400486844 /* Paul-App-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A43628EE1E4600486844 /* Info.plist */,
+				EC17A40D28EE19A500486844 /* Paul_App_iOS.entitlements */,
+				EC17A40828EE19A500486844 /* Assets.xcassets */,
+				EC17A40428EE19A400486844 /* Paul_App_iOSApp.swift */,
+				EC17A40628EE19A400486844 /* MainMenu.swift */,
+				EC17A42F28EE1BDB00486844 /* tictactoe */,
+				EC17A40A28EE19A500486844 /* Preview Content */,
+			);
+			path = "Paul-App-iOS";
+			sourceTree = "<group>";
+		};
+		EC17A40A28EE19A500486844 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A40B28EE19A500486844 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC17A41628EE19E000486844 /* Paul-App-MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A43528EE1DFE00486844 /* Info.plist */,
+				EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */,
+				EC17A41928EE19E000486844 /* MainMenu.swift */,
+				EC17A43228EE1D6B00486844 /* tictactoe */,
+				EC17A41B28EE19E000486844 /* Assets.xcassets */,
+				EC17A42028EE19E000486844 /* Paul_App_MacOS.entitlements */,
+				EC17A41D28EE19E000486844 /* Preview Content */,
+			);
+			path = "Paul-App-MacOS";
+			sourceTree = "<group>";
+		};
+		EC17A41D28EE19E000486844 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A41E28EE19E000486844 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC17A42428EE19E500486844 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A42928EE1AF200486844 /* Assets.xcassets */,
+				EC17A42528EE1A0200486844 /* tictactoe */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EC17A42528EE1A0200486844 /* tictactoe */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A42628EE1A3600486844 /* TicTacToeEngine.swift */,
+				EC17A42C28EE1B2300486844 /* RasterFeld.swift */,
+			);
+			path = tictactoe;
+			sourceTree = "<group>";
+		};
+		EC17A42F28EE1BDB00486844 /* tictactoe */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A43028EE1BF700486844 /* TicTacToeGui.swift */,
+			);
+			path = tictactoe;
+			sourceTree = "<group>";
+		};
+		EC17A43228EE1D6B00486844 /* tictactoe */ = {
+			isa = PBXGroup;
+			children = (
+				EC17A43328EE1D7900486844 /* TicTacToeGui.swift */,
+			);
+			path = tictactoe;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC17A40028EE19A400486844 /* Paul-App-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC17A40E28EE19A500486844 /* Build configuration list for PBXNativeTarget "Paul-App-iOS" */;
+			buildPhases = (
+				EC17A3FD28EE19A400486844 /* Sources */,
+				EC17A3FE28EE19A400486844 /* Frameworks */,
+				EC17A3FF28EE19A400486844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paul-App-iOS";
+			productName = "Paul-App-iOS";
+			productReference = EC17A40128EE19A400486844 /* Paul-App-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC17A41428EE19E000486844 /* Paul-App-MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC17A42128EE19E000486844 /* Build configuration list for PBXNativeTarget "Paul-App-MacOS" */;
+			buildPhases = (
+				EC17A41128EE19E000486844 /* Sources */,
+				EC17A41228EE19E000486844 /* Frameworks */,
+				EC17A41328EE19E000486844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paul-App-MacOS";
+			productName = "Paul-App-MacOS";
+			productReference = EC17A41528EE19E000486844 /* Paul-App-MacOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EC17A3F728EE198200486844 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					EC17A40028EE19A400486844 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					EC17A41428EE19E000486844 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
 			};
 			buildConfigurationList = EC17A3FA28EE198200486844 /* Build configuration list for PBXProject "Paul-App" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -31,23 +226,402 @@
 				Base,
 			);
 			mainGroup = EC17A3F628EE198200486844;
+			productRefGroup = EC17A40228EE19A400486844 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EC17A40028EE19A400486844 /* Paul-App-iOS */,
+				EC17A41428EE19E000486844 /* Paul-App-MacOS */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC17A3FF28EE19A400486844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC17A40C28EE19A500486844 /* Preview Assets.xcassets in Resources */,
+				EC17A42A28EE1AF200486844 /* Assets.xcassets in Resources */,
+				EC17A40928EE19A500486844 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC17A41328EE19E000486844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC17A41F28EE19E000486844 /* Preview Assets.xcassets in Resources */,
+				EC17A42B28EE1AF200486844 /* Assets.xcassets in Resources */,
+				EC17A41C28EE19E000486844 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC17A3FD28EE19A400486844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC17A40728EE19A400486844 /* MainMenu.swift in Sources */,
+				EC17A42728EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
+				EC17A40528EE19A400486844 /* Paul_App_iOSApp.swift in Sources */,
+				EC17A43128EE1BF700486844 /* TicTacToeGui.swift in Sources */,
+				EC17A42D28EE1B2300486844 /* RasterFeld.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC17A41128EE19E000486844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC17A41A28EE19E000486844 /* MainMenu.swift in Sources */,
+				EC17A42828EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
+				EC17A41828EE19E000486844 /* Paul_App_MacOSApp.swift in Sources */,
+				EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */,
+				EC17A42E28EE1B2300486844 /* RasterFeld.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		EC17A3FB28EE198200486844 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 			};
 			name = Debug;
 		};
 		EC17A3FC28EE198200486844 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+			};
+			name = Release;
+		};
+		EC17A40F28EE19A500486844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Paul-App-iOS/Paul_App_iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"Paul-App-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X2TH88GCYU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paul-App-iOS/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.paulcornelissen.Paul-App-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EC17A41028EE19A500486844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Paul-App-iOS/Paul_App_iOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"Paul-App-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X2TH88GCYU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paul-App-iOS/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.paulcornelissen.Paul-App-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EC17A42228EE19E000486844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Paul-App-MacOS/Paul_App_MacOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "\"Paul-App-MacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X2TH88GCYU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paul-App-MacOS/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.paulcornelissen.Paul-App-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC17A42328EE19E000486844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Paul-App-MacOS/Paul_App_MacOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"Paul-App-MacOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X2TH88GCYU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Paul-App-MacOS/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.paulcornelissen.Paul-App-MacOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -59,6 +633,24 @@
 			buildConfigurations = (
 				EC17A3FB28EE198200486844 /* Debug */,
 				EC17A3FC28EE198200486844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC17A40E28EE19A500486844 /* Build configuration list for PBXNativeTarget "Paul-App-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC17A40F28EE19A500486844 /* Debug */,
+				EC17A41028EE19A500486844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC17A42128EE19E000486844 /* Build configuration list for PBXNativeTarget "Paul-App-MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC17A42228EE19E000486844 /* Debug */,
+				EC17A42328EE19E000486844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
