@@ -9,14 +9,10 @@ import SwiftUI
 
 struct TicTacToeGui: View {
     
-    let frameWidth: CGFloat = 600
-    let frameHeight: CGFloat = 650
+    let ranges = [(0..<3), (3..<6), (6..<9)]
+
     
-    @State public var spielzuege = ["", "", "", "", "", "", "", "", ""]
-    @State private var endGameText = "TicTacToe!"
-    @State public var gameEnded = false
-    private var ranges = [(0..<3), (3..<6), (6..<9)]
-    @State private var player: Int = Int.random(in: 1..<3)
+    @ObservedObject var engine = TicTacToeEngine()
     
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
@@ -25,23 +21,23 @@ struct TicTacToeGui: View {
         VStack() {
             //Titel
             if horizontalSizeClass == .compact {
-                Text(endGameText)
+                Text(engine.endGameText)
                     .underline()
                     .bold()
                     .foregroundColor(.accentColor)
                     .font(.system(size: 30))
-                    .alert(endGameText, isPresented: $gameEnded) {
-                        Button("Reset", role: .destructive, action: resetGame)
+                    .alert(engine.endGameText, isPresented: $engine.gameEnded) {
+                        Button("Reset", role: .destructive, action: engine.resetGame)
                     }
             }
             else {
-                Text(endGameText)
+                Text(engine.endGameText)
                     .underline()
                     .bold()
                     .foregroundColor(.accentColor)
                     .font(.system(size: 40))
-                    .alert(endGameText, isPresented: $gameEnded) {
-                        Button("Reset", role: .destructive, action: resetGame)
+                    .alert(engine.endGameText, isPresented: $engine.gameEnded) {
+                        Button("Reset", role: .destructive, action: engine.resetGame)
                     }
             }
             
@@ -66,11 +62,11 @@ struct TicTacToeGui: View {
                         ForEach(ranges, id: \.self) { range in
                             HStack {
                                 ForEach(range, id: \.self) { i in
-                                    RasterFeld(imagePath: $spielzuege[i])
+                                    RasterFeld(imagePath: $engine.spielzuege[i])
                                         .simultaneousGesture(
                                             TapGesture()
                                                 .onEnded { _ in
-                                                    playerTap(index: i)
+                                                    engine.playerTap(index: i)
                                                     
                                                 }
                                         )
@@ -100,11 +96,11 @@ struct TicTacToeGui: View {
                         ForEach(ranges, id: \.self) { range in
                             HStack {
                                 ForEach(range, id: \.self) { i in
-                                    RasterFeld(imagePath: $spielzuege[i])
+                                    RasterFeld(imagePath: $engine.spielzuege[i])
                                         .simultaneousGesture(
                                             TapGesture()
                                                 .onEnded { _ in
-                                                    playerTap(index: i)
+                                                    engine.playerTap(index: i)
                                                     
                                                 }
                                         )
@@ -116,52 +112,20 @@ struct TicTacToeGui: View {
             }
             
             if horizontalSizeClass == .compact {
-                Button("Reset", action: resetGame).font(.system(size: 20))
+                Button("Reset", action: engine.resetGame).font(.system(size: 20))
                 
             }
             else  {
                 Spacer(minLength: 200)
-                Button("Reset", action: resetGame).font(.system(size: 30))
+                Button("Reset", action: engine.resetGame).font(.system(size: 30))
             }
             
         }
-        .frame(width: frameWidth, height: frameHeight)
         .padding(15)
         
-        }d
-    }
-    
-    func resetGame() {
-        endGameText = "TicTacToe!"
-        spielzuege = ["", "", "", "", "", "", "", "", ""]
-        gameEnded = false
-        player = 1
-    }
-    
-    func playerTap(index: Int) {
-        if spielzuege[index] == "" {
-            spielzuege[index] = String(player)
-            if player == 1 {
-                player = 2
-            } else {
-                player = 1
-            }
         }
-        if checkWinner(moveDB: spielzuege, value: spielzuege[index]) {
-            if spielzuege[index] == String(1) {
-                endGameText = "Spieler Rot hat gewonnen!"
-            } else {
-                endGameText = "Spieler Blau hat gewonnen!"
-            }
-            gameEnded = true
-        }
-        if checkDraw(moveDB: spielzuege) {
-            self.endGameText = "Kein Gewinner..."
-            gameEnded = true
-        }
-        
-        
     }
+
     
 }
 

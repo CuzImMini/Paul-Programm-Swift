@@ -1,38 +1,37 @@
 //
 //  TicTacToeEngine.swift
-//  Paul-Programm-MacOS
+//  Paul-App
 //
 //  Created by Paul Cornelissen on 01.10.22.
 //
 
 import Foundation
 
-class TicTacToeEngine {
+class TicTacToeEngine: ObservableObject {
     
-    @Published public var spielzuege = ["", "", "", "", "", "", "", "", ""]
-    @Published private var endGameText = "TicTacToe!"
-    @Published public var gameEnded = false
-    @Published private var player: Int = Int.random(in: 1..<3)
+    @Published var spielzuege = ["", "", "", "", "", "", "", "", ""]
+    @Published var endGameText = "TicTacToe!"
+    @Published var gameEnded = false
+    @Published var player: Int = Int.random(in: 1...2)
     
-    private var ranges = [(0..<3), (3..<6), (6..<9)]
-
+    let winReihen = [
+        //Horizontale Reihen
+        [0,1,2],[3,4,5,],[6,7,8],
+        //Diagonale Reihen
+        [0,4,8],[2,4,6],
+        //Vertikale Reihen
+        [0,3,6],[1,4,7],[2,5,8]
+    ]
     
-    func checkWinner(moveDB: [String], value: String) -> Bool {
-        let winReihen = [
-            //Horizontale Reihen
-            [0, 1, 2, ], [3, 4, 5], [6, 7, 8],
-            //Diagonale Reihen
-            [0, 4, 8], [2, 4, 6],
-            //Vertikale Reihen
-            [0, 3, 6, ], [1, 4, 7], [2, 5, 8]
-        ]
-        
+    func checkWinner() -> Bool {
+        print("Test")
         for reihe in winReihen {
             var reihenlaenge = 0
             
             for feld in reihe {
-                if moveDB[feld] == value {
+                if spielzuege[feld] == String(player) {
                     reihenlaenge += 1
+                    
                     
                     if reihenlaenge == 3 {
                         return true
@@ -43,11 +42,11 @@ class TicTacToeEngine {
         return false
     }
     
-    func checkDraw(moveDB: [String]) -> Bool {
+    func checkDraw() -> Bool {
         
         var belegteFelder = 0
         
-        for string in moveDB {
+        for string in spielzuege {
             if string != "" {
                 belegteFelder += 1
                 
@@ -59,5 +58,39 @@ class TicTacToeEngine {
         return false
     }
     
-}
+    func playerTap(index: Int) {
+        if spielzuege[index] == "" {
+            spielzuege[index] = String(player)
+        }
+        if checkWinner() {
+            if spielzuege[index] == String(1) {
+                endGameText = "Spieler Rot hat gewonnen!"
+            } else {
+                endGameText = "Spieler Blau hat gewonnen!"
+            }
+            gameEnded = true
+        }
+        if checkDraw() {
+            endGameText = "Kein Gewinner..."
+            gameEnded = true
+        }
+        
+        if player == 1 {
+            player = 2
+        } else {
+            player = 1
+        }
+        
+        
+    }
+    
+    func resetGame() {
+        endGameText = "TicTacToe!"
+        spielzuege = ["", "", "", "", "", "", "", "", ""]
+        gameEnded = false
+        player = Int.random(in: 1...2)
+        
+    }
 
+    
+}
