@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainMenu: View {
     @Environment(\.openURL) var openURL
+    
     var frameWidth: CGFloat = 650
 
     var body: some View {
@@ -41,8 +42,11 @@ struct MainMenu: View {
                     Text("Sonstiges")
                             .font(.system(size: 20))
                             .underline()
-                    Button("Button") {
-                        print("sdihfiduhs")
+                    Button("Paint") {
+                        guard let url = URL(string: "paulcornelissen://paulpaint") else {
+                            return
+                        }
+                        openURL(url)
                     }
                 }
             }

@@ -16,19 +16,19 @@ struct TicTacToeGui: View {
 
 
     var body: some View {
-        ScrollView() {
             VStack() {
-                Spacer(minLength: 200)
-                Text(engine.endGameText)
-                        .underline()
-                        .bold()
-                        .foregroundColor(.accentColor)
-                        .font(.system(size: 40))
-                        .alert(engine.endGameText, isPresented: $engine.gameEnded) {
-                            Button("Reset", role: .destructive, action: engine.resetGame)
+                Spacer()
+                    .navigationTitle(engine.endGameText)
+                    .alert(engine.endGameText, isPresented: $engine.gameEnded) {
+                        Button("Reset", role: .destructive, action: engine.resetGame)
+                    }
+                    .toolbar() {
+                        ToolbarItem(placement: .automatic) {
+                            Button("Reset", action: engine.resetGame).font(.system(size: 25)).padding(30)
                         }
+                        
+                    }
 
-                Spacer(minLength: 200)
                 ZStack() {
                     Rectangle()
                             .cornerRadius(15)
@@ -59,15 +59,15 @@ struct TicTacToeGui: View {
 
                     }
 
-                }
+                }.scaleEffect(1.5)
 
-                Spacer(minLength: 200)
-                Button("Reset", action: engine.resetGame).font(.system(size: 30))
+                Spacer()
 
             }
                     .padding(15)
+                    .navigationBarBackButtonHidden(true)
 
-        }
+        
     }
 
 
@@ -76,8 +76,11 @@ struct TicTacToeGui: View {
 
 struct TicTacToeView_Previews: PreviewProvider {
 
+    
     static var previews: some View {
-        TicTacToeGui()
+        NavigationView() {
+            Text("")
+            TicTacToeGui()}
 
     }
 }

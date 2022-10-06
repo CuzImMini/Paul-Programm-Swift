@@ -13,6 +13,7 @@ struct MainMenu: View {
     var body: some View {
         NavigationView() {
             VStack {
+                Spacer()
                 //Titel etc.
                 VStack() {
                     Image(systemName: "graduationcap.fill")
@@ -27,9 +28,8 @@ struct MainMenu: View {
                     Text("Bitte wähle ein Programm:")
                             .foregroundColor(.secondary)
                 }
-                Spacer().frame(width: 50, height: 50)
+                Spacer()
                 VStack() {
-                    Spacer().frame(width: 50, height: 50)
                     VStack(alignment: .center) {
                         Text("Spiele")
                                 .font(Font.system(size: 20))
@@ -45,15 +45,15 @@ struct MainMenu: View {
                                 .underline()
                                 .bold()
                         Spacer().frame(width: 50, height: 20)
-                        NavigationLink(destination: Text("coming soon")) {
-                            Text("coming soon")
+                        NavigationLink(destination: PaintMainGui()) {
+                            Text("Paint")
                         }
                     }
 
                 }
+                Spacer()
             }
         }
-                .navigationViewStyle(StackNavigationViewStyle())
 
     }
 }

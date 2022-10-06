@@ -13,6 +13,7 @@ struct MainMenu: View {
     var body: some View {
         NavigationView() {
             VStack {
+                Spacer()
                 VStack() {
                     Image(systemName: "graduationcap.fill")
                             .resizable()
@@ -22,39 +23,49 @@ struct MainMenu: View {
                     Text("Paul-Programm!")
                             .font(.system(size: 24))
                             .foregroundColor(.primary)
-                    Divider().frame(width: 300, height: 20)
+                    Divider().frame(width: 200, height: 20)
                     Text("Bitte wähle ein Programm:")
                             .foregroundColor(.secondary)
+                    Spacer().frame(width: 50, height: 50)
                 }
-                Spacer().frame(width: 50, height: 50)
                 HStack() {
                     VStack() {
                         Text("Spiele")
                                 .font(.system(size: 20))
                                 .underline()
-                        Spacer().frame(width: 50, height: 20)
+                        Spacer().frame(width: 20, height: 20)
                         NavigationLink(destination: TicTacToeGui()) {
                             Text("TicTacToe")
                         }
                     }
-                    Spacer().frame(width: 250, height: 20)
+                    Spacer().frame(width: 50, height: 10)
                     VStack() {
                         Text("Sonstiges")
                                 .font(.system(size: 20))
                                 .underline()
 
-                        Spacer().frame(width: 50, height: 20)
-                        NavigationLink(destination: Text("coming soon")) {
-                            Text("coming soon")
+                        Spacer().frame(width: 20, height: 20)
+                        NavigationLink(destination: PaintMainGui()) {
+                            Text("Paint")
                         }
                     }
                 }
-
+                Spacer()
 
             }
-                    .scaleEffect(1.3)
-        }
-                .navigationViewStyle(StackNavigationViewStyle())
+            
+            VStack() {
+                Image(systemName: "graduationcap.fill")
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(.accentColor)
+                        .navigationBarTitle("Hauptmenü", displayMode: .automatic)
+                Spacer().frame(width: 10, height: 40)
+                Text("Willkommen beim Paul-Programm!")
+                        .font(.system(size: 44))
+                        .foregroundColor(.primary)
+                        .navigationTitle("Hauptmenü")
+            }        }
 
     }
 }

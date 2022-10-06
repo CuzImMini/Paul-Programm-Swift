@@ -63,14 +63,14 @@ class TicTacToeEngine: ObservableObject {
         }
         if checkWinner() {
             if spielzuege[index] == String(1) {
-                endGameText = "Spieler Rot hat gewonnen!"
+                endGameText = "Sieg für Rot!"
             } else {
-                endGameText = "Spieler Blau hat gewonnen!"
+                endGameText = "Sieg für Blau!"
             }
             gameEnded = true
         }
         if checkDraw() {
-            endGameText = "Kein Gewinner..."
+            endGameText = "Kein Gewinner"
             gameEnded = true
         }
 
@@ -84,7 +84,7 @@ class TicTacToeEngine: ObservableObject {
     }
 
     func resetGame() {
-        endGameText = "Pauls TicTacToe!"
+        endGameText = "TicTacToe!"
         spielzuege = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
         gameEnded = false
         player = Int.random(in: 1...2)

@@ -15,6 +15,19 @@
 		EC097CCA28EE4217008C8762 /* RasterFeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42C28EE1B2300486844 /* RasterFeld.swift */; };
 		EC097CCB28EE421A008C8762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A42928EE1AF200486844 /* Assets.xcassets */; };
 		EC097CD028EE42D4008C8762 /* TicTacToeGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CCF28EE42D4008C8762 /* TicTacToeGui.swift */; };
+		EC097CD228EEF32B008C8762 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC097CD128EEF32B008C8762 /* Launch Screen.storyboard */; };
+		EC097CD328EEF32B008C8762 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC097CD128EEF32B008C8762 /* Launch Screen.storyboard */; };
+		EC097CD528EEF578008C8762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CD428EEF578008C8762 /* AppDelegate.swift */; };
+		EC097CD728EEF578008C8762 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CD428EEF578008C8762 /* AppDelegate.swift */; };
+		EC097CDE28EF0A27008C8762 /* PaintMainGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CDD28EF0A27008C8762 /* PaintMainGui.swift */; };
+		EC097CE128EF126D008C8762 /* Linie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE028EF126D008C8762 /* Linie.swift */; };
+		EC097CE228EF126D008C8762 /* Linie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE028EF126D008C8762 /* Linie.swift */; };
+		EC097CE328EF126D008C8762 /* Linie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE028EF126D008C8762 /* Linie.swift */; };
+		EC097CE628EF1521008C8762 /* PaintMainGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE528EF1521008C8762 /* PaintMainGui.swift */; };
+		EC097CE828EF15A5008C8762 /* PaintEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE728EF15A5008C8762 /* PaintEngine.swift */; };
+		EC097CE928EF15A5008C8762 /* PaintEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE728EF15A5008C8762 /* PaintEngine.swift */; };
+		EC097CEA28EF15A5008C8762 /* PaintEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CE728EF15A5008C8762 /* PaintEngine.swift */; };
+		EC097CED28EF1986008C8762 /* PaintMainGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC097CEC28EF1986008C8762 /* PaintMainGui.swift */; };
 		EC17A40528EE19A400486844 /* Paul_App_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A40428EE19A400486844 /* Paul_App_iOSApp.swift */; };
 		EC17A40728EE19A400486844 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A40628EE19A400486844 /* MainMenu.swift */; };
 		EC17A40928EE19A500486844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC17A40828EE19A500486844 /* Assets.xcassets */; };
@@ -41,6 +54,13 @@
 		EC097CC428EE4201008C8762 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC097CCD28EE4289008C8762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC097CCF28EE42D4008C8762 /* TicTacToeGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGui.swift; sourceTree = "<group>"; };
+		EC097CD128EEF32B008C8762 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EC097CD428EEF578008C8762 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC097CDD28EF0A27008C8762 /* PaintMainGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintMainGui.swift; sourceTree = "<group>"; };
+		EC097CE028EF126D008C8762 /* Linie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Linie.swift; sourceTree = "<group>"; };
+		EC097CE528EF1521008C8762 /* PaintMainGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintMainGui.swift; sourceTree = "<group>"; };
+		EC097CE728EF15A5008C8762 /* PaintEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintEngine.swift; sourceTree = "<group>"; };
+		EC097CEC28EF1986008C8762 /* PaintMainGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintMainGui.swift; sourceTree = "<group>"; };
 		EC17A40128EE19A400486844 /* Paul-App-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paul-App-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC17A40428EE19A400486844 /* Paul_App_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paul_App_iOSApp.swift; sourceTree = "<group>"; };
 		EC17A40628EE19A400486844 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
@@ -90,6 +110,7 @@
 		EC097CBC28EE4201008C8762 /* Paul-App-iPadOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC097CE428EF150C008C8762 /* paint */,
 				EC097CCE28EE42C4008C8762 /* tictactoe */,
 				EC097CCD28EE4289008C8762 /* Info.plist */,
 				EC097CBD28EE4201008C8762 /* Paul_App_iPadOSApp.swift */,
@@ -116,6 +137,47 @@
 			path = tictactoe;
 			sourceTree = "<group>";
 		};
+		EC097CD828EEF75D008C8762 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EC097CD128EEF32B008C8762 /* Launch Screen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		EC097CDC28EF0A10008C8762 /* paint */ = {
+			isa = PBXGroup;
+			children = (
+				EC097CDD28EF0A27008C8762 /* PaintMainGui.swift */,
+			);
+			path = paint;
+			sourceTree = "<group>";
+		};
+		EC097CDF28EF123C008C8762 /* paint */ = {
+			isa = PBXGroup;
+			children = (
+				EC097CE028EF126D008C8762 /* Linie.swift */,
+				EC097CE728EF15A5008C8762 /* PaintEngine.swift */,
+			);
+			path = paint;
+			sourceTree = "<group>";
+		};
+		EC097CE428EF150C008C8762 /* paint */ = {
+			isa = PBXGroup;
+			children = (
+				EC097CE528EF1521008C8762 /* PaintMainGui.swift */,
+			);
+			path = paint;
+			sourceTree = "<group>";
+		};
+		EC097CEB28EF1977008C8762 /* paint */ = {
+			isa = PBXGroup;
+			children = (
+				EC097CEC28EF1986008C8762 /* PaintMainGui.swift */,
+			);
+			path = paint;
+			sourceTree = "<group>";
+		};
 		EC17A3F628EE198200486844 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +202,7 @@
 		EC17A40328EE19A400486844 /* Paul-App-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC097CEB28EF1977008C8762 /* paint */,
 				EC17A43628EE1E4600486844 /* Info.plist */,
 				EC17A40D28EE19A500486844 /* Paul_App_iOS.entitlements */,
 				EC17A40828EE19A500486844 /* Assets.xcassets */,
@@ -162,6 +225,7 @@
 		EC17A41628EE19E000486844 /* Paul-App-MacOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC097CDC28EF0A10008C8762 /* paint */,
 				EC17A43528EE1DFE00486844 /* Info.plist */,
 				EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */,
 				EC17A41928EE19E000486844 /* MainMenu.swift */,
@@ -184,8 +248,11 @@
 		EC17A42428EE19E500486844 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EC097CDF28EF123C008C8762 /* paint */,
+				EC097CD828EEF75D008C8762 /* LaunchScreen */,
 				EC17A42928EE1AF200486844 /* Assets.xcassets */,
 				EC17A42528EE1A0200486844 /* tictactoe */,
+				EC097CD428EEF578008C8762 /* AppDelegate.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -317,6 +384,7 @@
 			files = (
 				EC097CC528EE4201008C8762 /* Preview Assets.xcassets in Resources */,
 				EC097CCB28EE421A008C8762 /* Assets.xcassets in Resources */,
+				EC097CD328EEF32B008C8762 /* Launch Screen.storyboard in Resources */,
 				EC097CC228EE4201008C8762 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +395,7 @@
 			files = (
 				EC17A40C28EE19A500486844 /* Preview Assets.xcassets in Resources */,
 				EC17A42A28EE1AF200486844 /* Assets.xcassets in Resources */,
+				EC097CD228EEF32B008C8762 /* Launch Screen.storyboard in Resources */,
 				EC17A40928EE19A500486844 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,11 +417,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC097CE328EF126D008C8762 /* Linie.swift in Sources */,
+				EC097CD728EEF578008C8762 /* AppDelegate.swift in Sources */,
 				EC097CC028EE4201008C8762 /* MainMenu.swift in Sources */,
+				EC097CE628EF1521008C8762 /* PaintMainGui.swift in Sources */,
 				EC097CC928EE4214008C8762 /* TicTacToeEngine.swift in Sources */,
 				EC097CBE28EE4201008C8762 /* Paul_App_iPadOSApp.swift in Sources */,
 				EC097CD028EE42D4008C8762 /* TicTacToeGui.swift in Sources */,
 				EC097CCA28EE4217008C8762 /* RasterFeld.swift in Sources */,
+				EC097CEA28EF15A5008C8762 /* PaintEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +433,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC097CE128EF126D008C8762 /* Linie.swift in Sources */,
+				EC097CD528EEF578008C8762 /* AppDelegate.swift in Sources */,
 				EC17A40728EE19A400486844 /* MainMenu.swift in Sources */,
 				EC17A42728EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
 				EC17A40528EE19A400486844 /* Paul_App_iOSApp.swift in Sources */,
 				EC17A43128EE1BF700486844 /* TicTacToeGui.swift in Sources */,
+				EC097CE828EF15A5008C8762 /* PaintEngine.swift in Sources */,
+				EC097CED28EF1986008C8762 /* PaintMainGui.swift in Sources */,
 				EC17A42D28EE1B2300486844 /* RasterFeld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,10 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC097CE228EF126D008C8762 /* Linie.swift in Sources */,
 				EC17A41A28EE19E000486844 /* MainMenu.swift in Sources */,
+				EC097CDE28EF0A27008C8762 /* PaintMainGui.swift in Sources */,
 				EC17A42828EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
 				EC17A41828EE19E000486844 /* Paul_App_MacOSApp.swift in Sources */,
 				EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */,
+				EC097CE928EF15A5008C8762 /* PaintEngine.swift in Sources */,
 				EC17A42E28EE1B2300486844 /* RasterFeld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +526,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -529,7 +609,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -636,6 +716,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Paul-App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -719,6 +800,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Paul-App";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
