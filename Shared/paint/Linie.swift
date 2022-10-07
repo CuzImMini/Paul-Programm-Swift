@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Linie {
     var punkte = [CGPoint]()
-    var color: Color = .red
+    var color: Color = .black
     var lineWidth: Double = 2.5
     
 }

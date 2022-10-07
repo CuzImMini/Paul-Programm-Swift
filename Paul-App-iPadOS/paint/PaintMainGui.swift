@@ -46,7 +46,8 @@ struct PaintMainGui: View {
         .toolbar() {
             ToolbarItem(placement: .automatic) {
                 Button("Reset") {
-                    engine.alleZeichnungen = []
+                    engine.clearCanvas()
+                    
                 }
             }
         }

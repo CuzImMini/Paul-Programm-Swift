@@ -13,47 +13,50 @@ struct PaintMainGui: View {
     
     private var padding: CGFloat = 25
     
-    var body: some View {
-        VStack() {
-            Canvas {
-                context, size in
-                
-                for linie in engine.alleZeichnungen {
-                    var pfad = Path()
-                    pfad.addLines(linie.punkte)
-                    context.stroke(pfad, with: .color(linie.color), lineWidth: linie.lineWidth)
-                }
-                
-            }
-            .border(.black)
+    var canvas: some View {
+        Canvas {
+            context, size in
             
-            .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                .onChanged({ value in
-                    
-                    let punkt = value.location
-                    engine.aktiveZeichnung.punkte.append(punkt)
-                    engine.alleZeichnungen.append(engine.aktiveZeichnung)
+            for linie in engine.alleZeichnungen {
+                var pfad = Path()
+                pfad.addLines(linie.punkte)
+                context.stroke(pfad, with: .color(linie.color), lineWidth: linie.lineWidth)
+            }
+            
+        }
+        .border(.black)
+        
+        .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+            .onChanged({ value in
+                
+                let punkt = value.location
+                engine.aktiveZeichnung.punkte.append(punkt)
+                engine.alleZeichnungen.append(engine.aktiveZeichnung)
+                
+            })
+                .onEnded({
+                    value in
+                    engine.aktiveZeichnung = Linie(punkte: [])
                     
                 })
-                    .onEnded({
-                        value in
-                        engine.aktiveZeichnung = Linie(punkte: [])
-                        
-                    })
-            )
+        )
+    }
+    
+    var body: some View {
+        VStack() {
+            canvas
         }
         .navigationTitle("Paul-Paint")
         .toolbar() {
             ToolbarItem(placement: .automatic) {
                 Button("Reset") {
-                    engine.alleZeichnungen = []
+                    engine.clearCanvas()
                 }
             }
         }
         .padding(padding)
         
     }
-    
     
 }
 

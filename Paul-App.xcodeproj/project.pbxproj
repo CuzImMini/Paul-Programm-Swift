@@ -44,6 +44,9 @@
 		EC17A42E28EE1B2300486844 /* RasterFeld.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A42C28EE1B2300486844 /* RasterFeld.swift */; };
 		EC17A43128EE1BF700486844 /* TicTacToeGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A43028EE1BF700486844 /* TicTacToeGui.swift */; };
 		EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC17A43328EE1D7900486844 /* TicTacToeGui.swift */; };
+		EC4F137A28EF82AF000B186E /* FarbWaehler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F137928EF82AF000B186E /* FarbWaehler.swift */; };
+		EC4F137B28EF82AF000B186E /* FarbWaehler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F137928EF82AF000B186E /* FarbWaehler.swift */; };
+		EC4F137C28EF82AF000B186E /* FarbWaehler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4F137928EF82AF000B186E /* FarbWaehler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,7 @@
 		EC17A43328EE1D7900486844 /* TicTacToeGui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeGui.swift; sourceTree = "<group>"; };
 		EC17A43528EE1DFE00486844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EC17A43628EE1E4600486844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EC4F137928EF82AF000B186E /* FarbWaehler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarbWaehler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 			children = (
 				EC097CE028EF126D008C8762 /* Linie.swift */,
 				EC097CE728EF15A5008C8762 /* PaintEngine.swift */,
+				EC4F137928EF82AF000B186E /* FarbWaehler.swift */,
 			);
 			path = paint;
 			sourceTree = "<group>";
@@ -225,10 +230,10 @@
 		EC17A41628EE19E000486844 /* Paul-App-MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC097CDC28EF0A10008C8762 /* paint */,
 				EC17A43528EE1DFE00486844 /* Info.plist */,
 				EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */,
 				EC17A41928EE19E000486844 /* MainMenu.swift */,
+				EC097CDC28EF0A10008C8762 /* paint */,
 				EC17A43228EE1D6B00486844 /* tictactoe */,
 				EC17A41B28EE19E000486844 /* Assets.xcassets */,
 				EC17A42028EE19E000486844 /* Paul_App_MacOS.entitlements */,
@@ -425,6 +430,7 @@
 				EC097CBE28EE4201008C8762 /* Paul_App_iPadOSApp.swift in Sources */,
 				EC097CD028EE42D4008C8762 /* TicTacToeGui.swift in Sources */,
 				EC097CCA28EE4217008C8762 /* RasterFeld.swift in Sources */,
+				EC4F137C28EF82AF000B186E /* FarbWaehler.swift in Sources */,
 				EC097CEA28EF15A5008C8762 /* PaintEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +447,7 @@
 				EC17A43128EE1BF700486844 /* TicTacToeGui.swift in Sources */,
 				EC097CE828EF15A5008C8762 /* PaintEngine.swift in Sources */,
 				EC097CED28EF1986008C8762 /* PaintMainGui.swift in Sources */,
+				EC4F137A28EF82AF000B186E /* FarbWaehler.swift in Sources */,
 				EC17A42D28EE1B2300486844 /* RasterFeld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +459,7 @@
 				EC097CE228EF126D008C8762 /* Linie.swift in Sources */,
 				EC17A41A28EE19E000486844 /* MainMenu.swift in Sources */,
 				EC097CDE28EF0A27008C8762 /* PaintMainGui.swift in Sources */,
+				EC4F137B28EF82AF000B186E /* FarbWaehler.swift in Sources */,
 				EC17A42828EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
 				EC17A41828EE19E000486844 /* Paul_App_MacOSApp.swift in Sources */,
 				EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */,
