@@ -36,6 +36,12 @@ struct MainMenu: View {
                         }
                         openURL(url)
                     }
+                    Button("Pong") {
+                        guard let url = URL(string: "paulcornelissen://pong") else {
+                            return
+                        }
+                        openURL(url)
+                    }
                 }
                 Spacer(minLength: 150)
                 VStack() {

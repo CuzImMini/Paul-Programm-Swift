@@ -10,7 +10,7 @@ import SwiftUI
 struct TicTacToeGui: View {
 
     let frameWidth: CGFloat = 600
-    let frameHeight: CGFloat = 650
+    let frameHeight: CGFloat = 700
 
     let ranges = [(0..<3), (3..<6), (6..<9)]
 
@@ -19,18 +19,24 @@ struct TicTacToeGui: View {
     var body: some View {
 
         VStack() {
-            VStack() {
+            HStack() {
                 //Titel
+                Spacer()
                 Text(engine.endGameText)
                         .font(.system(size: 30))
                         .underline()
                         .bold()
                         .foregroundColor(.accentColor)
                         .alert(engine.endGameText, isPresented: $engine.gameEnded) {
-                            Button("Reset", role: .destructive, action: engine.resetGame)
+                            Button("Reset", role: .destructive) { engine.resetGame(scoreReset: false)}
                         }
+                Spacer()
+                Divider().frame(maxHeight: 100)
+                Spacer()
+                ScoreIndicator(score: $engine.score)
+                Spacer().frame(maxWidth: 50)
             }
-            Spacer()
+            Spacer(minLength: 20)
             //Raster und Hintergrund
             ZStack() {
                 Rectangle()
@@ -62,11 +68,19 @@ struct TicTacToeGui: View {
 
                 }
             }
-            Spacer()
-            Button("Reset") {
-                engine.resetGame()
+            Spacer(minLength: 20)
+            
+            HStack {
+                Button("Neustart") {
+                    engine.resetGame(scoreReset: true)
+                }
+                Spacer().frame(maxWidth: 100)
+                .padding(20)
+                Button("Reset") {
+                    engine.resetGame(scoreReset: false)
+                }
+                .padding(20)
             }
-                    .padding(.bottom, 20)
         }
                 .frame(width: frameWidth, height: frameHeight)
                 .padding(15)

@@ -13,6 +13,9 @@ class TicTacToeEngine: ObservableObject {
     @Published var endGameText = "TicTacToe!"
     @Published var gameEnded = false
     @Published var player: Int = 1
+    
+    @Published var score = [0,0]
+
 
     let winReihen = [
         //Horizontale Reihen
@@ -33,6 +36,12 @@ class TicTacToeEngine: ObservableObject {
 
 
                     if reihenlaenge == 3 {
+                        if player == 1 {
+                            score[0] += 1
+                        }
+                        else {
+                            score[1] += 1
+                        }
                         return true
                     }
                 }
@@ -83,11 +92,15 @@ class TicTacToeEngine: ObservableObject {
 
     }
 
-    func resetGame() {
+    func resetGame(scoreReset: Bool) {
         endGameText = "TicTacToe!"
         spielzuege = ["0", "0", "0", "0", "0", "0", "0", "0", "0"]
         gameEnded = false
         player = Int.random(in: 1...2)
+        if scoreReset {
+            score = [0,0]
+            
+        }
 
     }
 

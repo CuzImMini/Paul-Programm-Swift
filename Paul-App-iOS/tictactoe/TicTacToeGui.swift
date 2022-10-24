@@ -17,8 +17,10 @@ struct TicTacToeGui: View {
     var body: some View {
         VStack() {
             Spacer()
+            ScoreIndicator(score: $engine.score)
                 .alert(engine.endGameText, isPresented: $engine.gameEnded) {
-                    Button("Reset", role: .destructive, action: engine.resetGame)
+                    Button("Reset", role: .destructive) {engine.resetGame(scoreReset: false)
+                    }
                 }
 
                 .navigationTitle(engine.endGameText)
@@ -26,7 +28,6 @@ struct TicTacToeGui: View {
                 Rectangle()
                     .cornerRadius(15)
                     .frame(width: 500, height: 500)
-                    .padding(0)
                     .foregroundColor(.accentColor)
                     .scaleEffect(0.7)
                 Image("tictactoebackground")
@@ -60,10 +61,11 @@ struct TicTacToeGui: View {
         }
         .toolbar() {
             ToolbarItem(placement: .automatic) {
-                    Button("Reset", action: engine.resetGame)
-                        .padding(10)
-                
+                Button("Neustart") {engine.resetGame(scoreReset: true)}
+                    .buttonStyle(.bordered)
+
             }
+            
         }
     
         

@@ -20,5 +20,8 @@ struct Paul_App_MacOSApp: App {
         WindowGroup {
             PaintMainGui()
         }.handlesExternalEvents(matching: ["paulpaint"])
+        WindowGroup{
+            PongMenu()
+        }.handlesExternalEvents(matching: ["pong"])
     }
 }

@@ -9,68 +9,75 @@ import SwiftUI
 
 struct MainMenu: View {
     @Environment(\.horizontalSizeClass) var sizeClass
-
+    
     var body: some View {
-        NavigationView() {
+        NavigationSplitView()
+        {
             VStack {
+                Divider()
                 Spacer()
                 VStack() {
                     Image(systemName: "graduationcap.fill")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .foregroundColor(.accentColor)
-                            .navigationBarTitle("Hauptmenü", displayMode: .automatic)
+                        .resizable()
+                        .frame(width: 80, height: 80)
+                        .foregroundColor(.accentColor)
                     Text("Paul-Programm!")
-                            .font(.system(size: 24))
-                            .foregroundColor(.primary)
+                        .font(.system(size: 24))
+                        .foregroundColor(.primary)
                     Divider().frame(width: 200, height: 20)
                     Text("Bitte wähle ein Programm:")
-                            .foregroundColor(.secondary)
+                        .font(.system(size: 20))
+                        .foregroundColor(.secondary)
                     Spacer().frame(width: 50, height: 50)
+                    Text("Spiel-Auswahl")
+                        .font(.system(size: 25))
+                        .underline()
                 }
                 HStack() {
                     VStack() {
-                        Text("Spiele")
-                                .font(.system(size: 20))
-                                .underline()
                         Spacer().frame(width: 20, height: 20)
                         NavigationLink(destination: TicTacToeGui()) {
                             Text("TicTacToe")
+                                .font(.system(size: 20))
+                        }
+                        Spacer().frame(width: 20, height: 20)
+                        NavigationLink(destination: Text("Vier gewinnt")) {
+                            
+                            Text("Vier gewinnt")
+                                .font(.system(size: 20))
+                            
                         }
                     }
-                    Spacer().frame(width: 50, height: 10)
+                    Spacer().frame(width: 70, height: 10)
                     VStack() {
-                        Text("Sonstiges")
-                                .font(.system(size: 20))
-                                .underline()
-
+                        
                         Spacer().frame(width: 20, height: 20)
                         NavigationLink(destination: PaintMainGui()) {
                             Text("Paint")
+                                .font(.system(size: 20))
+                            
+                        }
+                        Spacer().frame(width: 20, height: 20)
+                        NavigationLink(destination: PongMenu()) {
+                            Text("Pong")
+                                .font(.system(size: 20))
                         }
                     }
                 }
                 Spacer()
-
+                
+            }        } detail: {
+                WelcomeView()
+                
+                
             }
-            
-            VStack() {
-                Image(systemName: "graduationcap.fill")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .foregroundColor(.accentColor)
-                        .navigationBarTitle("Hauptmenü", displayMode: .automatic)
-                Spacer().frame(width: 10, height: 40)
-                Text("Willkommen beim Paul-Programm!")
-                        .font(.system(size: 44))
-                        .foregroundColor(.primary)
-                        .navigationTitle("Hauptmenü")
-            }        }
-
+        
+        
+        
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainMenuiPadOS_Previews: PreviewProvider {
     static var previews: some View {
         MainMenu()
     }
