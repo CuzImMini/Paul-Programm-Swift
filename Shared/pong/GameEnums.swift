@@ -19,13 +19,13 @@ enum SideVariants: CaseIterable {
 }
 
 enum GameTypes: String, CaseIterable, Hashable {
-    
+
     case singlePlayerEasy = "Einzelspieler-Einfach"
     case singlePlayerMedium = "Einzelspieler-Mittel"
     case singlePlayerHard = "Einzelspieler-Schwer"
     case singlePlayerImpossible = "Einzelspieler-Unmöglich"
     case multiPlayer = "2-Spieler"
-    
+
 }
 
 enum Orientation: CaseIterable {

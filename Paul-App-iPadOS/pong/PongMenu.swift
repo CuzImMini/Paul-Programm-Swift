@@ -9,34 +9,34 @@ import SwiftUI
 
 
 struct PongMenu: View {
-    
+
     @State private var selectedMode: GameTypes = .singlePlayerEasy
-    
+
     @State var pongView: PongStates = .OptionMenu
     @State var fullscreen: Bool = true
-    
+
     @Environment(\.dismiss) var dismiss
-    
-    
+
+
     var body: some View {
         switch pongView {
-            
+
         case .OptionMenu:
             VStack {
                 //Texte
                 VStack {
                     Divider().frame(maxHeight: 10)
-                    
+
                     Text("Paul-Pong")
-                        .foregroundColor(.white)
-                        .font(.system(size: 65, weight: .black, design: .monospaced))
-                    
+                            .foregroundColor(.white)
+                            .font(.system(size: 65, weight: .black, design: .monospaced))
+
                     Spacer()
-                    
+
                     Text("Wähle einen Spielmodus:")
-                        .foregroundColor(.white)
-                        .font(.system(size: 35, weight: .black, design: .monospaced))
-                    
+                            .foregroundColor(.white)
+                            .font(.system(size: 35, weight: .black, design: .monospaced))
+
                     Spacer().frame(maxHeight: 95)
                 }
                 //Buttons
@@ -44,17 +44,17 @@ struct PongMenu: View {
                     Picker("Spielmodus", selection: $selectedMode) {
                         ForEach(GameTypes.allCases, id: \.self) { gametype in
                             Text(gametype.rawValue)
-                            
+
                         }
                     }
-                    .scaleEffect(1.5)
-                    .buttonStyle(.bordered)
-                    
+                            .scaleEffect(1.5)
+                            .buttonStyle(.bordered)
+
                     Spacer()
-                    
-                    Button("Spiel starten"){
+
+                    Button("Spiel starten") {
                         switch selectedMode {
-                            
+
                         case .singlePlayerEasy:
                             pongView = .activeSinglePlayer1
                         case .singlePlayerMedium:
@@ -67,17 +67,17 @@ struct PongMenu: View {
                             pongView = .activeMultiPlayer
                         }
                     }
-                    .buttonStyle(.bordered)
-                    .foregroundColor(.white)
-                    .font(.system(size: 30))
+                            .buttonStyle(.bordered)
+                            .foregroundColor(.white)
+                            .font(.system(size: 30))
                 }
                 Spacer()
-                
-                
+
+
             }
-            .background(Color(red: 0.1, green: 0.1, blue: 0.1))
-            .navigationTitle("")
-            .navigationBarTitleDisplayMode(.inline)
+                    .background(Color(red: 0.1, green: 0.1, blue: 0.1))
+                    .navigationTitle("")
+                    .navigationBarTitleDisplayMode(.inline)
 
         case .activeSinglePlayer1:
             GameView(viewType: $pongView, selectedGametype: .singlePlayerEasy)
@@ -95,30 +95,31 @@ struct PongMenu: View {
             GameView(viewType: $pongView, selectedGametype: .multiPlayer)
 
         }
-        
+
 
     }
 }
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
-        
+
         NavigationView() {
-MainMenu()
-            PongMenu()}
+            MainMenu()
+            PongMenu()
+        }
         //MainMenu()
-        
+
     }
 }
 
 enum PongStates: CaseIterable {
-    
+
     case OptionMenu
     case activeSinglePlayer1
     case activeSinglePlayer2
     case activeSinglePlayer3
     case aciveSinglePlayer4
     case activeMultiPlayer
-    
+
 }
 

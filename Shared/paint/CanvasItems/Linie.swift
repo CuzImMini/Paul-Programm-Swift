@@ -11,5 +11,5 @@ struct Linie {
     var punkte = [CGPoint]()
     var color: Color = .black
     var lineWidth: Double = 2.5
-    
+
 }

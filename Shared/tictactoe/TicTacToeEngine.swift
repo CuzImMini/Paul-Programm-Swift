@@ -13,8 +13,8 @@ class TicTacToeEngine: ObservableObject {
     @Published var endGameText = "TicTacToe!"
     @Published var gameEnded = false
     @Published var player: Int = 1
-    
-    @Published var score = [0,0]
+
+    @Published var score = [0, 0]
 
 
     let winReihen = [
@@ -38,8 +38,7 @@ class TicTacToeEngine: ObservableObject {
                     if reihenlaenge == 3 {
                         if player == 1 {
                             score[0] += 1
-                        }
-                        else {
+                        } else {
                             score[1] += 1
                         }
                         return true
@@ -98,8 +97,8 @@ class TicTacToeEngine: ObservableObject {
         gameEnded = false
         player = Int.random(in: 1...2)
         if scoreReset {
-            score = [0,0]
-            
+            score = [0, 0]
+
         }
 
     }

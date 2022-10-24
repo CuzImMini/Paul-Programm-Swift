@@ -10,6 +10,6 @@ import Foundation
 enum DrawingObjekte: String, CaseIterable {
     case Quadrat = "Quadrat"
     case Haus = "Haus"
-    case Kreis  = "Kreis"
+    case Kreis = "Kreis"
     case Dreieck = "Dreieck"
 }

@@ -13,12 +13,12 @@ struct NavigationBarModifier: ViewModifier {
     var titleColor: UIColor?
 
     init(
-        backgroundColor: UIColor?,
-        titleColor: UIColor?) {
+            backgroundColor: UIColor?,
+            titleColor: UIColor?) {
         self.backgroundColor = backgroundColor
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
-       coloredAppearance.backgroundColor = backgroundColor
+        coloredAppearance.backgroundColor = backgroundColor
         coloredAppearance.titleTextAttributes = [.foregroundColor: titleColor ?? .white]
         coloredAppearance.largeTitleTextAttributes = [.foregroundColor: titleColor ?? .white]
 
@@ -28,13 +28,13 @@ struct NavigationBarModifier: ViewModifier {
     }
 
     func body(content: Content) -> some View {
-        ZStack{
+        ZStack {
             content
             VStack {
                 GeometryReader { geometry in
                     Color(self.backgroundColor ?? .clear)
-                        .frame(height: geometry.safeAreaInsets.top)
-                        .edgesIgnoringSafeArea(.top)
+                            .frame(height: geometry.safeAreaInsets.top)
+                            .edgesIgnoringSafeArea(.top)
                     Spacer()
                 }
             }
@@ -45,11 +45,11 @@ struct NavigationBarModifier: ViewModifier {
 extension View {
 
     func navigationBarColor(
-        backgroundColor: UIColor?,
-        titleColor: UIColor?) -> some View {
+            backgroundColor: UIColor?,
+            titleColor: UIColor?) -> some View {
         self.modifier(NavigationBarModifier(
-            backgroundColor: backgroundColor,
-                                            titleColor: titleColor))
+                backgroundColor: backgroundColor,
+                titleColor: titleColor))
     }
 
 }

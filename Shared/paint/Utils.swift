@@ -10,10 +10,10 @@ import Foundation
 func toArray() -> [String] {
     var n = 1
     return Array(
-        GeneratorOf<DrawingObjekte> {
-            
-        }
-    
+            GeneratorOf<DrawingObjekte> {
+
+            }
+
     )
-    
+
 }

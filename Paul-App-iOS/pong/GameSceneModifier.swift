@@ -8,14 +8,14 @@
 import Foundation
 
 struct GameSceneModifierIOS {
-    
+
     var sceneVar: GameScene = GameScene()
-        .setSizeSetting(CGSize(width: 585, height: 1100))
-    
+            .setSizeSetting(CGSize(width: 585, height: 1100))
+
     func getScene() -> GameScene {
         return sceneVar
     }
-    
+
     func getScene(type: GameTypes) -> GameScene {
         return sceneVar.setGameType(type)
     }

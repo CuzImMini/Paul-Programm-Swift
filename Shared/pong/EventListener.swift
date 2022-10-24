@@ -9,7 +9,7 @@ import Foundation
 import SpriteKit
 
 class EventListener {
-    
+
     init(rightBouncepad: SKSpriteNode, leftBouncepad: SKSpriteNode, ball: SKSpriteNode, scene: GameScene) {
         self.bouncepadR = rightBouncepad
         self.bouncepadL = leftBouncepad
@@ -21,19 +21,19 @@ class EventListener {
     var ball: SKSpriteNode
     var bouncepadR: SKSpriteNode
     var bouncepadL: SKSpriteNode
-    
+
     func checkEvent() -> GameEvent {
-        
-        if ball.position.y >= (scene.frame.height/2) - 22.5 {
+
+        if ball.position.y >= (scene.frame.height / 2) - 22.5 {
             return GameEvent.goalAtL
         }
-        if ball.position.y <= -(scene.frame.height/2) + 22.5 {
+        if ball.position.y <= -(scene.frame.height / 2) + 22.5 {
             return GameEvent.goalAtR
         }
-        
-            return GameEvent.nothing
+
+        return GameEvent.nothing
     }
-    
-    
+
+
 }
 

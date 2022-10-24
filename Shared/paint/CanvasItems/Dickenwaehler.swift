@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct Dickenwaehler: View {
-    
+
     @ObservedObject var engine: PaintEngine
-    
+
     var body: some View {
-        
+
         VStack {
             Slider(
-                value: $engine.dickenwahl,
-                in: 1...20
+                    value: $engine.dickenwahl,
+                    in: 1...20
             )
-            .padding(20)
-            .onChange(of: engine.dickenwahl) { change in
-                engine.dickenwahl = change
-            }
-            .frame(maxWidth: 250)
+                    .padding(20)
+                    .onChange(of: engine.dickenwahl) { change in
+                        engine.dickenwahl = change
+                    }
+                    .frame(maxWidth: 250)
             Text("Liniendicke").frame(maxWidth: 250).padding(.bottom, 10)
-            
+
         }
-        
+
     }
 }
 

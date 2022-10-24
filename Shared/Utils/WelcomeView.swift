@@ -14,14 +14,15 @@ struct WelcomeView: View {
                     .resizable()
                     .frame(width: 80, height: 80)
                     .foregroundColor(.accentColor)
-            #if os(iOS)
+                    #if os(iOS)
                     .navigationBarTitle("Hauptmenü", displayMode: .automatic)
-            #endif
+                    #endif
             Spacer().frame(width: 10, height: 40)
             Text("Willkommen beim Paul-Programm!")
                     .font(.system(size: 44))
                     .foregroundColor(.primary)
-        }    }
+        }
+    }
 }
 
 struct WelcomeView_Previews: PreviewProvider {

@@ -28,7 +28,9 @@ struct TicTacToeGui: View {
                         .bold()
                         .foregroundColor(.accentColor)
                         .alert(engine.endGameText, isPresented: $engine.gameEnded) {
-                            Button("Reset", role: .destructive) { engine.resetGame(scoreReset: false)}
+                            Button("Reset", role: .destructive) {
+                                engine.resetGame(scoreReset: false)
+                            }
                         }
                 Spacer()
                 Divider().frame(maxHeight: 100)
@@ -69,17 +71,17 @@ struct TicTacToeGui: View {
                 }
             }
             Spacer(minLength: 20)
-            
+
             HStack {
                 Button("Neustart") {
                     engine.resetGame(scoreReset: true)
                 }
                 Spacer().frame(maxWidth: 100)
-                .padding(20)
+                        .padding(20)
                 Button("Reset") {
                     engine.resetGame(scoreReset: false)
                 }
-                .padding(20)
+                        .padding(20)
             }
         }
                 .frame(width: frameWidth, height: frameHeight)
