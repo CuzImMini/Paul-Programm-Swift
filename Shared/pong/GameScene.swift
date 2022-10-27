@@ -42,7 +42,12 @@ class GameScene: SKScene {
             //Größe
             self.size = sizeSetting ?? CGSize(width: 1, height: 1)
             //Hintergrund
+            #if os(macOS)
             backgroundColor = NSColor(Color(red: 0.1, green: 0.1, blue: 0.1))
+            #endif
+            #if os(iOS)
+            backgroundColor = UIColor(Color(red: 0.1, green: 0.1, blue: 0.1))
+            #endif
 
             //Score
             scoreLabelL.position = CGPoint(x: 0, y: (self.frame.height / 6))

@@ -40,11 +40,10 @@ struct MainMenu: View {
                                     .font(.system(size: 20))
                         }
                         Spacer().frame(width: 20, height: 20)
-                        NavigationLink(destination: Text("Vier gewinnt")) {
+                        NavigationLink(destination:                             GuessView()) {
 
-                            Text("Vier gewinnt")
-                                    .font(.system(size: 20))
-
+Text("Zahlen raten")
+                            
                         }
                     }
                     Spacer().frame(width: 70, height: 10)

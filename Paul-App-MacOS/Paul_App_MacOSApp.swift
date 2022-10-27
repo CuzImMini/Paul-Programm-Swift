@@ -25,5 +25,9 @@ struct Paul_App_MacOSApp: App {
             PongMenu()
         }
                 .handlesExternalEvents(matching: ["pong"])
+        WindowGroup {
+            GuessView()
+        }
+                .handlesExternalEvents(matching: ["numberguess"])
     }
 }

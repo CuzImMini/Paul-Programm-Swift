@@ -54,6 +54,12 @@ struct MainMenu: View {
                         }
                         openURL(url)
                     }
+                    Button("Zahlen raten") {
+                        guard let url = URL(string: "paulcornelissen://numberguess") else {
+                            return
+                        }
+                        openURL(url)
+                    }
                 }
             }
         }

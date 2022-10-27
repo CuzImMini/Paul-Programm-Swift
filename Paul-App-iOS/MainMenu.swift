@@ -32,7 +32,7 @@ struct MainMenu: View {
                 Spacer()
                 VStack() {
                     VStack(alignment: .center) {
-                        Text("Spiele")
+                        VStack() {Text("Spiele")
                                 .font(Font.system(size: 20))
                                 .underline()
                                 .bold()
@@ -40,7 +40,8 @@ struct MainMenu: View {
                         NavigationLink(destination: TicTacToeGui()) {
                             Text("TicTacToe")
                         }
-                        Spacer().frame(width: 50, height: 20)
+                        Spacer().frame(width: 50, height: 20)}
+                        
                         NavigationLink(destination: PongMenu()) {
 
                             Text("Pong")
@@ -56,6 +57,12 @@ struct MainMenu: View {
                         Spacer().frame(width: 50, height: 20)
                         NavigationLink(destination: PaintMainGui()) {
                             Text("Paint")
+                        }
+                        Spacer().frame(width: 50, height: 20)
+                        NavigationLink(destination:                             GuessView()
+) {
+                            Text("Zahlen raten")
+                            
                         }
                     }
 

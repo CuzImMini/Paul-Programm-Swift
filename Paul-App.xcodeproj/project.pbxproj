@@ -74,6 +74,26 @@
 		EC7BA5B129072BBA00B74798 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BA5AE29072BBA00B74798 /* WelcomeView.swift */; };
 		EC7BA5B329072CD400B74798 /* GameSceneModifierMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BA5B229072CD400B74798 /* GameSceneModifierMac.swift */; };
 		EC7BA5B529072CF900B74798 /* PongMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BA5B429072CF900B74798 /* PongMenu.swift */; };
+		EC8C5E35290935C800E5B325 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E34290935C800E5B325 /* GuessView.swift */; };
+		EC8C5E372909371900E5B325 /* GuessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E362909371900E5B325 /* GuessEngine.swift */; };
+		EC8C5E382909371900E5B325 /* GuessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E362909371900E5B325 /* GuessEngine.swift */; };
+		EC8C5E392909371900E5B325 /* GuessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E362909371900E5B325 /* GuessEngine.swift */; };
+		EC8C5E3C290937BC00E5B325 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3B290937BC00E5B325 /* NumberView.swift */; };
+		EC8C5E3D290937BC00E5B325 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3B290937BC00E5B325 /* NumberView.swift */; };
+		EC8C5E3E290937BC00E5B325 /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3B290937BC00E5B325 /* NumberView.swift */; };
+		EC8C5E402909395900E5B325 /* NumberEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3F2909395900E5B325 /* NumberEnums.swift */; };
+		EC8C5E412909395900E5B325 /* NumberEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3F2909395900E5B325 /* NumberEnums.swift */; };
+		EC8C5E422909395900E5B325 /* NumberEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E3F2909395900E5B325 /* NumberEnums.swift */; };
+		EC8C5E442909498200E5B325 /* WinTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E432909498200E5B325 /* WinTable.swift */; };
+		EC8C5E452909498200E5B325 /* WinTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E432909498200E5B325 /* WinTable.swift */; };
+		EC8C5E462909498200E5B325 /* WinTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E432909498200E5B325 /* WinTable.swift */; };
+		EC8C5E4829094EA400E5B325 /* GuessButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4729094EA400E5B325 /* GuessButtons.swift */; };
+		EC8C5E4929094EA400E5B325 /* GuessButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4729094EA400E5B325 /* GuessButtons.swift */; };
+		EC8C5E4A29094EA400E5B325 /* GuessButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4729094EA400E5B325 /* GuessButtons.swift */; };
+		EC8C5E4D29094F5700E5B325 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4C29094F5700E5B325 /* GuessView.swift */; };
+		EC8C5E4F2909529100E5B325 /* NumberViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4E2909529100E5B325 /* NumberViewHelper.swift */; };
+		EC8C5E502909529100E5B325 /* NumberViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4E2909529100E5B325 /* NumberViewHelper.swift */; };
+		EC8C5E512909529100E5B325 /* NumberViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8C5E4E2909529100E5B325 /* NumberViewHelper.swift */; };
 		EC8E994F28FB5DF300B169BC /* GameEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E994E28FB5DF300B169BC /* GameEnums.swift */; };
 		EC8E995128FB5DF300B169BC /* GameEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E994E28FB5DF300B169BC /* GameEnums.swift */; };
 		EC8E995328FBEED300B169BC /* PongMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8E995228FBEED300B169BC /* PongMenu.swift */; };
@@ -96,6 +116,7 @@
 		ECE7638528FB1528005F2D1D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE7638328FB1528005F2D1D /* Launch Screen.storyboard */; };
 		ECE7638728FB16C3005F2D1D /* ObjectSummoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7638628FB16C3005F2D1D /* ObjectSummoner.swift */; };
 		ECE7638928FB16C3005F2D1D /* ObjectSummoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7638628FB16C3005F2D1D /* ObjectSummoner.swift */; };
+		ECE827A3290A579D008AF2F2 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE827A2290A579D008AF2F2 /* GuessView.swift */; };
 		ECFB56A428F6F338006A3056 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFB56A328F6F338006A3056 /* GameView.swift */; };
 		ECFB56A728F6F434006A3056 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFB568D28F5CDCD006A3056 /* SpriteKit.framework */; };
 		ECFB56A928F6F43D006A3056 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFB56A828F6F43D006A3056 /* SpriteKit.framework */; };
@@ -147,6 +168,14 @@
 		EC7BA5AE29072BBA00B74798 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		EC7BA5B229072CD400B74798 /* GameSceneModifierMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSceneModifierMac.swift; sourceTree = "<group>"; };
 		EC7BA5B429072CF900B74798 /* PongMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongMenu.swift; sourceTree = "<group>"; };
+		EC8C5E34290935C800E5B325 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		EC8C5E362909371900E5B325 /* GuessEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessEngine.swift; sourceTree = "<group>"; };
+		EC8C5E3B290937BC00E5B325 /* NumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		EC8C5E3F2909395900E5B325 /* NumberEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberEnums.swift; sourceTree = "<group>"; };
+		EC8C5E432909498200E5B325 /* WinTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinTable.swift; sourceTree = "<group>"; };
+		EC8C5E4729094EA400E5B325 /* GuessButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessButtons.swift; sourceTree = "<group>"; };
+		EC8C5E4C29094F5700E5B325 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		EC8C5E4E2909529100E5B325 /* NumberViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewHelper.swift; sourceTree = "<group>"; };
 		EC8E994E28FB5DF300B169BC /* GameEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEnums.swift; sourceTree = "<group>"; };
 		EC8E995228FBEED300B169BC /* PongMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongMenu.swift; sourceTree = "<group>"; };
 		EC8E995528FBF42000B169BC /* NavigationBarColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarColor.swift; sourceTree = "<group>"; };
@@ -159,6 +188,7 @@
 		ECE7637A28FB0B1D005F2D1D /* EventListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListener.swift; sourceTree = "<group>"; };
 		ECE7638328FB1528005F2D1D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		ECE7638628FB16C3005F2D1D /* ObjectSummoner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectSummoner.swift; sourceTree = "<group>"; };
+		ECE827A2290A579D008AF2F2 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		ECFB568D28F5CDCD006A3056 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.0.sdk/System/Library/Frameworks/SpriteKit.framework; sourceTree = DEVELOPER_DIR; };
 		ECFB56A328F6F338006A3056 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		ECFB56A828F6F43D006A3056 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
@@ -195,6 +225,7 @@
 		EC097CBC28EE4201008C8762 /* Paul-App-iPadOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC8C5E4B29094F4800E5B325 /* NumberGuess */,
 				EC8E997328FC33A200B169BC /* pong */,
 				EC097CE428EF150C008C8762 /* paint */,
 				EC097CCE28EE42C4008C8762 /* tictactoe */,
@@ -282,6 +313,7 @@
 		EC17A40328EE19A400486844 /* Paul-App-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC8C5E33290935B000E5B325 /* NumberGuess */,
 				ECFB565C28F5B042006A3056 /* pong */,
 				EC17A43628EE1E4600486844 /* Info.plist */,
 				EC17A40D28EE19A500486844 /* Paul_App_iOS.entitlements */,
@@ -306,6 +338,7 @@
 		EC17A41628EE19E000486844 /* Paul-App-MacOS */ = {
 			isa = PBXGroup;
 			children = (
+				ECE827A1290A5791008AF2F2 /* NumberGuess */,
 				EC8E998428FC81DA00B169BC /* pong */,
 				EC17A43528EE1DFE00486844 /* Info.plist */,
 				EC17A41728EE19E000486844 /* Paul_App_MacOSApp.swift */,
@@ -330,6 +363,7 @@
 		EC17A42428EE19E500486844 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				EC8C5E322909350200E5B325 /* NumberGuess */,
 				EC8E995428FBF41000B169BC /* Utils */,
 				ECE7638228FB1528005F2D1D /* LaunchScreen */,
 				ECFB565B28F5B03A006A3056 /* pong */,
@@ -390,6 +424,35 @@
 			path = CanvasItems;
 			sourceTree = "<group>";
 		};
+		EC8C5E322909350200E5B325 /* NumberGuess */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C5E362909371900E5B325 /* GuessEngine.swift */,
+				EC8C5E3B290937BC00E5B325 /* NumberView.swift */,
+				EC8C5E3F2909395900E5B325 /* NumberEnums.swift */,
+				EC8C5E432909498200E5B325 /* WinTable.swift */,
+				EC8C5E4729094EA400E5B325 /* GuessButtons.swift */,
+				EC8C5E4E2909529100E5B325 /* NumberViewHelper.swift */,
+			);
+			path = NumberGuess;
+			sourceTree = "<group>";
+		};
+		EC8C5E33290935B000E5B325 /* NumberGuess */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C5E34290935C800E5B325 /* GuessView.swift */,
+			);
+			path = NumberGuess;
+			sourceTree = "<group>";
+		};
+		EC8C5E4B29094F4800E5B325 /* NumberGuess */ = {
+			isa = PBXGroup;
+			children = (
+				EC8C5E4C29094F5700E5B325 /* GuessView.swift */,
+			);
+			path = NumberGuess;
+			sourceTree = "<group>";
+		};
 		EC8E995428FBF41000B169BC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,6 +488,14 @@
 				ECE7638328FB1528005F2D1D /* Launch Screen.storyboard */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		ECE827A1290A5791008AF2F2 /* NumberGuess */ = {
+			isa = PBXGroup;
+			children = (
+				ECE827A2290A579D008AF2F2 /* GuessView.swift */,
+			);
+			path = NumberGuess;
 			sourceTree = "<group>";
 		};
 		ECFB565B28F5B03A006A3056 /* pong */ = {
@@ -595,21 +666,28 @@
 				EC2FC13F28F45E4E001AE90E /* Path.swift in Sources */,
 				EC097CE328EF126D008C8762 /* Linie.swift in Sources */,
 				EC44F72F28F0317F007650DB /* Painting.swift in Sources */,
+				EC8C5E4A29094EA400E5B325 /* GuessButtons.swift in Sources */,
 				EC70AE7E28F1D9F800965BA7 /* ObjectPlacementButton.swift in Sources */,
 				EC7BA5B129072BBA00B74798 /* WelcomeView.swift in Sources */,
 				EC8E997B28FC33B400B169BC /* PongMenu.swift in Sources */,
 				EC70AE6E28F13F9800965BA7 /* DrawingObjekteEnum.swift in Sources */,
 				ECE7638928FB16C3005F2D1D /* ObjectSummoner.swift in Sources */,
+				EC8C5E512909529100E5B325 /* NumberViewHelper.swift in Sources */,
+				EC8C5E422909395900E5B325 /* NumberEnums.swift in Sources */,
 				EC097CD728EEF578008C8762 /* AppDelegate.swift in Sources */,
+				EC8C5E3E290937BC00E5B325 /* NumberView.swift in Sources */,
 				EC8E995828FBF42000B169BC /* NavigationBarColor.swift in Sources */,
 				EC70AE6628F13AF000965BA7 /* ObjectSelector.swift in Sources */,
 				EC70AE7A28F1D8F500965BA7 /* Dickenwaehler.swift in Sources */,
 				EC097CC028EE4201008C8762 /* MainMenu.swift in Sources */,
+				EC8C5E392909371900E5B325 /* GuessEngine.swift in Sources */,
+				EC8C5E4D29094F5700E5B325 /* GuessView.swift in Sources */,
 				EC8E995128FB5DF300B169BC /* GameEnums.swift in Sources */,
 				EC097CE628EF1521008C8762 /* PaintMainGui.swift in Sources */,
 				ECE7637D28FB0B1D005F2D1D /* EventListener.swift in Sources */,
 				ECE7637928FAB4C4005F2D1D /* GameScene.swift in Sources */,
 				EC097CC928EE4214008C8762 /* TicTacToeEngine.swift in Sources */,
+				EC8C5E462909498200E5B325 /* WinTable.swift in Sources */,
 				EC097CBE28EE4201008C8762 /* Paul_App_iPadOSApp.swift in Sources */,
 				EC70AE6A28F13E1500965BA7 /* DrawingObjectView.swift in Sources */,
 				EC097CD028EE42D4008C8762 /* TicTacToeGui.swift in Sources */,
@@ -629,12 +707,17 @@
 				EC2FC13D28F45E4E001AE90E /* Path.swift in Sources */,
 				EC097CE128EF126D008C8762 /* Linie.swift in Sources */,
 				EC44F72D28F0317F007650DB /* Painting.swift in Sources */,
+				EC8C5E372909371900E5B325 /* GuessEngine.swift in Sources */,
 				EC70AE7C28F1D9F800965BA7 /* ObjectPlacementButton.swift in Sources */,
+				EC8C5E35290935C800E5B325 /* GuessView.swift in Sources */,
 				EC7BA5AF29072BBA00B74798 /* WelcomeView.swift in Sources */,
+				EC8C5E402909395900E5B325 /* NumberEnums.swift in Sources */,
 				EC70AE6C28F13F9800965BA7 /* DrawingObjekteEnum.swift in Sources */,
+				EC8C5E4F2909529100E5B325 /* NumberViewHelper.swift in Sources */,
 				EC097CD528EEF578008C8762 /* AppDelegate.swift in Sources */,
 				EC70AE6428F13AF000965BA7 /* ObjectSelector.swift in Sources */,
 				EC70AE7828F1D8F500965BA7 /* Dickenwaehler.swift in Sources */,
+				EC8C5E4829094EA400E5B325 /* GuessButtons.swift in Sources */,
 				EC17A40728EE19A400486844 /* MainMenu.swift in Sources */,
 				EC8E994F28FB5DF300B169BC /* GameEnums.swift in Sources */,
 				EC17A42728EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
@@ -647,12 +730,14 @@
 				EC70AE6828F13E1500965BA7 /* DrawingObjectView.swift in Sources */,
 				EC097CE828EF15A5008C8762 /* PaintEngine.swift in Sources */,
 				EC2FC14B28F4BB5D001AE90E /* ScoreIndicator.swift in Sources */,
+				EC8C5E3C290937BC00E5B325 /* NumberView.swift in Sources */,
 				EC097CED28EF1986008C8762 /* PaintMainGui.swift in Sources */,
 				EC8E995328FBEED300B169BC /* PongMenu.swift in Sources */,
 				ECE7638728FB16C3005F2D1D /* ObjectSummoner.swift in Sources */,
 				EC4F137A28EF82AF000B186E /* FarbWaehler.swift in Sources */,
 				ECFB56A428F6F338006A3056 /* GameView.swift in Sources */,
 				EC17A42D28EE1B2300486844 /* RasterFeld.swift in Sources */,
+				EC8C5E442909498200E5B325 /* WinTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8C5E452909498200E5B325 /* WinTable.swift in Sources */,
 				EC097CE228EF126D008C8762 /* Linie.swift in Sources */,
 				EC17A41A28EE19E000486844 /* MainMenu.swift in Sources */,
 				EC2FC13E28F45E4E001AE90E /* Path.swift in Sources */,
@@ -671,19 +757,25 @@
 				ECA3042B2906C6480095E624 /* GameEnums.swift in Sources */,
 				EC70AE7928F1D8F500965BA7 /* Dickenwaehler.swift in Sources */,
 				EC4F137B28EF82AF000B186E /* FarbWaehler.swift in Sources */,
+				ECE827A3290A579D008AF2F2 /* GuessView.swift in Sources */,
+				EC8C5E3D290937BC00E5B325 /* NumberView.swift in Sources */,
 				EC70AE7D28F1D9F800965BA7 /* ObjectPlacementButton.swift in Sources */,
 				EC7BA5B029072BBA00B74798 /* WelcomeView.swift in Sources */,
 				ECA3042D2906C65A0095E624 /* EventListener.swift in Sources */,
 				ECA3042C2906C6570095E624 /* GameScene.swift in Sources */,
 				EC17A42828EE1A3600486844 /* TicTacToeEngine.swift in Sources */,
 				EC8E998728FC81E300B169BC /* GameView.swift in Sources */,
+				EC8C5E412909395900E5B325 /* NumberEnums.swift in Sources */,
 				EC17A41828EE19E000486844 /* Paul_App_MacOSApp.swift in Sources */,
 				EC70AE6528F13AF000965BA7 /* ObjectSelector.swift in Sources */,
 				EC70AE6D28F13F9800965BA7 /* DrawingObjekteEnum.swift in Sources */,
 				EC70AE6928F13E1500965BA7 /* DrawingObjectView.swift in Sources */,
+				EC8C5E382909371900E5B325 /* GuessEngine.swift in Sources */,
 				ECA3042E2906C65D0095E624 /* ObjectSummoner.swift in Sources */,
 				EC17A43428EE1D7900486844 /* TicTacToeGui.swift in Sources */,
+				EC8C5E4929094EA400E5B325 /* GuessButtons.swift in Sources */,
 				EC097CE928EF15A5008C8762 /* PaintEngine.swift in Sources */,
+				EC8C5E502909529100E5B325 /* NumberViewHelper.swift in Sources */,
 				EC17A42E28EE1B2300486844 /* RasterFeld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
